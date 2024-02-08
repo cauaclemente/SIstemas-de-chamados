@@ -2,6 +2,7 @@ import { Routes, Route} from "react-router-dom"
 import Signin from "../Pages/Signin/Login"
 import SignUp from "../Pages/SignUp/Cadastro"
 import Dashboard from "../Pages/Dashboard/Dashboard"
+import Private from "./Private"
 
 const RoutesApp = () => {
     return (
@@ -9,7 +10,7 @@ const RoutesApp = () => {
             <Route path="/" element={ <Signin /> } />
             <Route path="/register" element={ <SignUp /> } />
 
-            <Route path="/dashboard" element={ <Dashboard />} />
+            <Route path="/dashboard" element={ <Private> <Dashboard /> </Private> } />
         </Routes>
     )
 }

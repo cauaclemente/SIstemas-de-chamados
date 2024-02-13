@@ -1,0 +1,130 @@
+
+.sidebar {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #181c2e;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+    transition: width 0.5s ease-in-out; 
+}
+
+.sidebar div {
+    background-image: url("../../assets/cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+.sidebar div {
+    padding-top: 30px;
+}
+
+.sidebar div img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: cover;
+   filter: drop-shadow(2px 3px 6px #121212);
+   -webkit-filter: drop-shadow(2px 3px 6px #121212);
+}
+
+.sidebar a {
+    display: block;
+    padding: 16px;
+    display: flex;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+   flex-direction: row;
+    align-items: center;
+    transition: ease-in-out 0.4s;
+}
+
+.sidebar a svg {
+    margin-right: 0.5rem;
+}
+
+.sidebar a:hover {
+    background-color: #121212;
+    color: rgba(255, 0, 0, 0.825);
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+.sidebar.open {
+    width: 200px; 
+    margin-top: -50px;
+}
+
+.bar {
+    display: none;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px;
+    background: red;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav_bar {
+    display: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 90%;
+    width: 30px;
+}
+
+.menu-icon {
+    margin: 0;
+}
+  
+.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+  
+.open span:nth-child(2) {
+    opacity: 0;
+}
+  
+.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+    .bar,
+    .close-icon,
+    .nav_bar {
+        display: block;
+    }
+
+    .sidebar {
+        width: 0;
+        margin-top: -50px;
+        height: 110vh;
+        overflow: hidden;
+    }
+
+    .sidebar.open {
+        width: 50%;
+        max-width: 200px;
+        height: 110vh;
+        overflow: auto;
+    }
+
+    .sidebar div {
+        height: 130px;
+    }
+
+    .sidebar div img {
+        width: 60px; 
+        height: 60px;
+    }
+}

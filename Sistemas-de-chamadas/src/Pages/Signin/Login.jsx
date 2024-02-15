@@ -46,7 +46,7 @@ const Signin = () => {
               />
 
               <button className="acessar" type="submit">
-                {loadingAuth ? <CgSpinner className="spinner" /> : "Cadastrar  "}
+                {loadingAuth ? <CgSpinner className="spinner" /> : "Login  "}
                 </button>
           </form>
 

@@ -69,6 +69,7 @@ const Profile = () => {
         })
         .catch((error) => {
           console.log(error)
+          toast.error("Ops algo deu errado!")
         })
       })
     })
@@ -95,6 +96,8 @@ const Profile = () => {
       
     }else if (nome !== "" && imageAvatar !== null){
       handleUpload()
+    }else {
+      toast.error("Preencha todos os campos!")
     }
 
   }

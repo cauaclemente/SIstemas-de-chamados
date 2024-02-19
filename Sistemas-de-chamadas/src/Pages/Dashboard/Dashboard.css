@@ -71,6 +71,32 @@ table td .badge {
     color:  #fff;
 }
 
+.dashboard span {
+    margin: 2em 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.nenhum-new {
+    margin: 0 auto; 
+}
+
+.spinner-chamados {
+    font-size: 2.0rem;
+    animation: spin-chamados 1s linear infinite;
+    color: #000;
+    margin: 5% 20%;
+}
+
+@keyframes spin-chamados {
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (max-width: 600px) {
     table {
         border: 0;
@@ -109,7 +135,13 @@ table td .badge {
         font-weight: bold;
         text-transform: uppercase;
     }
+
     .new {
-        padding: 0.3em;
+        padding: 0.4em;
+    }
+
+    .nenhum-new {
+        margin-left: 10%;
+        text-align: center;
     }
 }

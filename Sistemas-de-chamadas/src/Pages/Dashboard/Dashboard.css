@@ -81,6 +81,20 @@ table td .badge {
     margin: 0 auto; 
 }
 
+.btn-more {
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    background-color: #181c2e;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.buscar {
+    margin-top: 1em;
+}
+
 .spinner-chamados {
     font-size: 2.0rem;
     animation: spin-chamados 1s linear infinite;

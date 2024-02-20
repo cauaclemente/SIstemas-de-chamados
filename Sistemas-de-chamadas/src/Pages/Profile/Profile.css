@@ -23,7 +23,7 @@
 }
 
 .label-avatar span {
-    z-index: 99;
+    z-index: 1;
     position: absolute;
     opacity: 0.7;
     transition: all 0.5s;

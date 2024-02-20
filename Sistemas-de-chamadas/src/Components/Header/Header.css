@@ -1,10 +1,10 @@
-
 .sidebar {
     width: 200px;
     margin: 0;
     padding: 0;
     background-color: #181c2e;
     position: fixed;
+    z-index: 99;
     height: 100vh;
     overflow: auto;
     transition: width 0.5s ease-in-out; 
@@ -77,8 +77,8 @@
 .nav_bar {
     display: none;
     cursor: pointer;
-    margin-top: 10px;
-    margin-left: 90%;
+    margin-top: 20px;
+    margin-left: 85%;
 }
 
 .menu-icon {

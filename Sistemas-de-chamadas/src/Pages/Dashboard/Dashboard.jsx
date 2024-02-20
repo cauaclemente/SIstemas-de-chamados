@@ -156,7 +156,7 @@ const Dashboard = () => {
                         </span>
                       </td>
                       <td data-label="Cadastro">{item.createdFormat}</td>
-                      <td data-label="#">
+                      <td data-label="">
                           <button className="actions" style={{backgroundColor: "#3583f6"}}
                             onClick={() => toggleModal(item)}>
                             <FiSearch color="#fff" size={17} />

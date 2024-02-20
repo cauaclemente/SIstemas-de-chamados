@@ -114,7 +114,7 @@ const Dashboard = () => {
     <>
     <Header />
     <div className="content">
-      <Title name="Tickets">
+      <Title name="Chamados">
         <FiMessageSquare size={25} />
       </Title>
       {chamados.length === 0 ? (
@@ -140,7 +140,7 @@ const Dashboard = () => {
               <th scope="col">Assunto</th>
               <th scope="col">Status</th>
               <th scope="col">Cadastrado em</th>
-              <th scope="col">#</th>
+              <th scope="col"></th>
             </tr>
           </thead>
             <tbody>
